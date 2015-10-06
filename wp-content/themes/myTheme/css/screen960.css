@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14.09.2015, 14:35:45
+    Author     : Andrey
+*/
+
+
+
+@media (max-width:930px) {
+    
+    html,
+    body{
+        font-size: 22px;
+    }
+    
+    header{
+        height: 960px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+
+    .work .cell {
+        display: table-header-group;
+    }
+
+    .work{
+        padding: 20px;
+        line-height: 0px;
+
+    }
+    /* поворачиваем стрелочку  */
+    .work > img{
+        transform: rotate(90deg);
+
+    }
+
+    /* about US*/
+
+    .benefit  .cell  {
+        display: block ;
+        padding: 0;
+
+    }
+
+    .benefit div:first-child p,
+    .benefit2 div:first-child p{
+        text-align: left;
+    }
+
+    .benefit div:first-child{
+        width: 90%;
+        margin: auto;
+    }
+
+    .benefit > div:last-child > img{
+        float: right;
+    }
+
+    .benefit div:first-child h3,
+    .benefit2 div:first-child h3{
+        text-align: center;
+    }
+
+
+    .benefit2 div:first-child,
+    .benefit2 div:last-child{
+        width: 90%;
+        margin: auto;
+        float: none;
+
+    }
+
+    /*whyus*/
+
+    #anchorWhyUS div{
+        display: block;
+    }
+
+    /* services */
+
+    .services .cell {
+        display: block; 
+        margin: 20px;
+        line-height: 7em;
+
+    }
+
+    /*team*/
+
+    .team .cell{
+        display: block;
+        width: 90%;
+    }
+
+    .team .cell div{
+        width: 90%;
+    }
+
+}
+
+@media  (min-width:800px) and (max-width:960px) {
+   
+    html,
+    body{
+        font-size: 20px;
+    }
+    
+    
+    header{
+        height: 540px;
+        font-size: 30px;
+        line-height: 27px;
+
+    }
+    
+    .work{
+        padding: 0px;
+    }
+
+    .benefit ,
+    .benefit2 {
+        margin-left: 30px;
+    }
+    
+    .garantee .cell img{
+        padding: 0;
+        margin: 32px;
+        float: left;
+    }
+
+    .services .table{
+        border-spacing: 20px;
+    }
+
+     .team .cell{
+        padding: 0;
+    }
+   
+
+}
+
+@media (max-width:960px) {
+    header ul li{
+        display: inherit;
+    } 
+
+}
+
+@media (max-width:1100px){
+    .baseSize{
+        width: 100%;
+    }
+     .team .cell{
+        padding: 10px;
+    }
+    
+}
+
+
+

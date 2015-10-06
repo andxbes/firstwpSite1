@@ -1,0 +1,461 @@
+html,body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family:  verdana ;
+    font-size: 15px;
+
+}
+
+.fullscrtoWidth{
+    width: 100%;
+}
+
+header{
+
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    height: 216px;
+    background-color:grey;
+
+    background-image: url("../pic/header.jpg") ;
+}
+
+#logo{
+    width: 108px;
+    //height: 108px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+
+
+.menuList{
+    height: 16px;
+    margin-top: 33px; 
+}
+
+.menuList ul{
+    margin: 0;
+    padding: 0;
+}
+.menuList li{  
+    display: inline;
+    margin: 18px ;
+    font-weight: bold;
+} 
+
+
+/*top menu*/
+
+.menu-top-menu-container{
+    margin-top: 33px;
+}
+
+
+.menuList_plusSub ,
+.menuList_plusSub ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ ul.menuList_plusSub:after {
+    display: inline;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menuList_plusSub > li {
+    display: inline;
+    position: relative;
+}
+ul.menuList_plusSub > li > a { 
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+header ul.menuList_plusSub > li > a:hover {
+    color: #3598dc;
+   
+    background-color: black;
+}
+.menuList_plusSub ul.sub-menu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 30px;
+    left: 0;
+    background-color: white;
+     z-index: 5;
+   
+}
+.menuList_plusSub ul.sub-menu > li {
+    display: block;
+}
+.menuList_plusSub ul.sub-menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: black;
+   
+    
+}
+.menuList_plusSub ul.sub-menu > li > a:hover {
+     text-decoration: none;
+}
+
+.menuList_plusSub > li:hover > ul.sub-menu {
+    display: block;
+    
+}
+
+/*top menu end*/
+
+
+.fullscrtoWidth h2{
+
+    padding: 0;
+    margin: 0;
+    font-size: 27px;
+}
+.fullscrtoWidth h3{
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+.fullscrtoWidth h4{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+
+article .content ,
+footer{
+    padding-top : 40px;
+    color: #49666c;
+
+}
+
+
+
+
+.baseSize{
+    width: 1100px;
+    margin: auto;
+}
+
+
+/* cool proposition */
+
+
+
+.table{
+    display: table;
+    margin: auto;
+    padding: 40px;
+}
+
+
+.cell {
+    display: table-cell;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.blueLine .row{
+    display: table-row;
+}
+
+
+.blue_button {
+    display: inline-block;
+    background: #2e9cd9;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+/*отступ в первом блоке на 100 px  "как мы работаем " */
+.howMeWork a{
+    margin-bottom: 100px;
+}
+
+
+
+
+/*arrow box */
+
+.arrow_box {
+    position: relative;
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
+
+}
+.arrow_box:after,
+.arrow_box:before {
+    top: 100%;
+    left: 50%;
+    border: solid ;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 19px;
+    margin-left: -19px;
+}
+.arrow_box:before {
+    border-color: rgba(157, 180, 196, 0);
+    border-top-color: #cccccc;
+    border-width: 20px;
+    margin-left: -20px;
+}
+/*-----------------*/
+
+
+.benefit ,
+.benefit2 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.benefit div:first-child{
+    padding-left: 0;
+    vertical-align: top;
+    text-align: left; 
+}
+
+.benefit div:last-child{
+    padding-right: 0;
+    alignment-adjust: auto;
+}
+
+
+
+.benefit2 div:first-child {
+    float: right;
+    width: 40%;
+    text-align: left;
+}
+.benefit2 div:last-child {
+    float: left;
+}
+
+
+
+
+.circle img{
+    padding: 25px;
+    border: 3px solid ;
+    border-color: #cccccc;
+    border-radius: 50%;
+}
+
+
+
+
+/*blue spice*/
+.arrow_boxBlue:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #3598dc;
+}
+.arrow_boxBlue {
+    background: #3598dc;
+    border-bottom: 1px solid #3598dc; 
+}
+
+.arrow_boxBlue:before {
+    border-top-color: #3598dc;
+}
+/*-----------------*/
+
+
+.garantee{
+    padding-left:0;
+    padding-right: 0;
+    background: #3598dc;  
+}
+
+.blueLine{
+    background: #3598dc;  
+}
+
+.garantee .cell img{
+    float:left;
+    padding: 10px  48px  0px   0px ;
+
+}
+
+.garantee .row div {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.garantee .cell div{
+    text-align: left;
+    color: white;
+
+}
+
+.garantee .cell div h3{
+    line-height: 22px;
+
+}
+
+
+
+/* ------------------------------ */
+
+.circle{
+    border-radius: 50%;
+}
+
+.services .table{
+    padding-top: 0;
+
+    border-spacing: 37px;
+}
+
+.services .circle{
+
+    padding: 0px 0px 0px 0px ;
+    width: 140px;
+    height: 140px;
+    vertical-align: middle;
+    color: white;
+
+}
+/* color for services circles */
+.darker34495e{
+    background: #34495e;
+}
+
+.lighter95a4a7{
+    background: #95a4a7;
+}
+/* ---------line----------- */
+.line{
+    border-bottom: 1px solid #cccccc;
+}
+/* team */
+.team .cell h4{
+    float:left;
+    font-weight: normal;
+    margin-left:16px;
+    color: #2b95d1;
+}
+.team a img{
+    padding:7px;
+}
+
+.team .cell div p{
+    text-align: right;
+    margin-right: 16px;
+}
+
+.team .cell p{
+    text-align: left;
+    padding-left: 5px;
+}
+
+.team{
+    padding-bottom: 40px;
+}
+
+
+footer h4{
+    //padding-bottom:  21px;
+    font-weight: 900;
+}
+
+ /*new */
+footer .menu-bottom-menu-container{
+    padding-bottom: 60px;
+}
+footer .menuList li{
+    padding:  0px calc(100%/28)  0px 0px ; 
+}
+
+.news .content{
+     padding-bottom: 25px;
+}
+.news .pageTitle{
+    padding-left: 30px;
+}
+.news {
+    text-align: left;
+    width: 67%;    
+    padding-left:3%;
+    
+}
+.new div{
+    position: relative;
+}
+.news {
+  
+    text-align: justify;
+}
+
+.link{
+    display: block;
+    background: #2e9cd9;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    font-size: 12px; 
+}
+
+.news .more-box{
+    padding:0px 0px 20px  0px;
+   
+}
+.news .more-box .link {
+    float: right;
+   
+}
+
+.news img{
+    float:left;
+    margin-right: 10px;
+}
+.news .postNews{
+    text-align: justify;
+}
+
+.container p,
+.postNews p{
+    text-align: justify;
+}
+
+.post-categories {
+    list-style: none !important;
+}
+
+.postNews p{
+    padding-top:10px;
+}
+
+.container{
+    padding:15px 0px 15px 0px ;
+}
+.sidebar {
+    text-align: left;
+   
+}
