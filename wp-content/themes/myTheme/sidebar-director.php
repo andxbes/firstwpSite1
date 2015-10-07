@@ -1,4 +1,4 @@
-<h4>Актеры:</h4>
+<h4 class="sidebarHeader">Актеры:</h4>
 <?php
 $posts = get_field('actors');
 ?>

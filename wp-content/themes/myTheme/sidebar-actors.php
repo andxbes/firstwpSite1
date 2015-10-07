@@ -1,5 +1,5 @@
 
-<h4>Режисеры:</h4>
+<h4 class="sidebarHeader">Режисеры:</h4>
 
 <?php
 $posts = get_field('director');

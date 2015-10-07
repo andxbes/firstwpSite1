@@ -396,7 +396,8 @@ footer .menuList li{
 .news .content{
      padding-bottom: 25px;
 }
-.news .pageTitle{
+.news .titlePost,
+.news .titleGenre{
     padding-left: 30px;
 }
 .news {

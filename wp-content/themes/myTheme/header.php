@@ -5,12 +5,10 @@
         <title><?=the_title()?></title>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-                <link rel="stylesheet" href="<?=$T_P?>/css/l2.css"/>
-                <link rel="stylesheet" href="<?=$T_P?>/css/screen960.css"/>
 	    <?php wp_head(); ?>
+                <style>
+                     <?php the_ThemeOptions();?>
+                </style>
     </head>
     <body <?php body_class(); ?>>
 		<?php wp_admin_bar_header()?>
@@ -21,8 +19,8 @@
 			<?php 
 			   topMenu();
 			?>
-
-		<?php get_sidebar(); ?>	
 			
         </header>
+        
 
+      

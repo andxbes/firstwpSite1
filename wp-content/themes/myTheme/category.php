@@ -9,7 +9,7 @@
 <article class="news">
 
 
-	<h1 class="pageTitle"><?php the_category() ?></h1>
+	<h1 class="titleCategory"><?php the_category() ?></h1>
 
 	<?php
 	

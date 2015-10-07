@@ -9,7 +9,7 @@
 <article class="news">
 
 
-    <h2 class="pageTitle"><?php the_archive_title(); ?></h2>
+    <h2 class="titleGenre"><?php the_archive_title(); ?></h2>
 
 	<?php
 	
