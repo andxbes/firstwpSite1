@@ -55,19 +55,23 @@ function bottomMenu() {
  * * */
 add_theme_support('post-thumbnails');
 
+
+/**
+*генерируем стили 
+**/
 function the_ThemeOptions() {
     if (function_exists('ot_get_option')) {
         $type_headers = ot_get_option('typeheaders', array());
         if (!empty($type_headers)) {
             foreach ($type_headers as $header) {
                 $class = "";
-                $className = $header['tag_name'];
+                $className = $header['class_name'];
                 $color = $header['color'];
                 $fontSize = $header['size'];
                 $family="";
                 
-                if (!empty($header['style_tag'])) {
-                    $fontFamily = $header['style_tag'];
+                if (!empty($header['font_style'])) {
+                    $fontFamily = $header['font_style'];
                     $family = $fontFamily[0]['family'];
                 }
                 echo ".$className{"
@@ -75,6 +79,27 @@ function the_ThemeOptions() {
                 . "font-size: $fontSize"."px;"
                 . "font-family: $family;"
                 . "} ";
+            }
+        }
+    }
+}
+
+/**
+ * подключаем шрифты   
+ **/
+function loadFonts() {
+    if (function_exists('ot_get_option')) {
+        $type_headers = ot_get_option('typeheaders', array());
+        if (!empty($type_headers)) {
+            foreach ($type_headers as $header) {  
+               
+                if (!empty($header['font_style'])) {
+                     //print_r($header['font_style']);
+                    $fontFamily = $header['font_style'];
+                    $family = $fontFamily[0]['family'];
+                    echo "<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=".ucfirst($family)."'/>\n";
+                }
+               
             }
         }
     }

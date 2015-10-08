@@ -10,7 +10,7 @@
  * @global object $wpdb
  * @global type $m
  * @global type $wp_locale
- * @global type $posts
+ * @global type $actors
  * @param type $params
  * @param type $initial
  * @param type $echo
@@ -18,7 +18,7 @@
  */
 function wpcf_fields_date_get_calendar( $params, $initial = true, $echo = true ) {
 
-    global $wpdb, $m, $wp_locale, $posts;
+    global $wpdb, $m, $wp_locale, $actors;
 
     // wpcf Set our own date
     $monthnum = adodb_date( 'n', $params['field_value'] );

@@ -230,10 +230,10 @@ echo '<?xml version="1.0" encoding="' . get_bloginfo('charset') . "\" ?>\n";
 	$where = 'WHERE ID IN (' . substr(str_repeat('%d,', count($my_options['acf_posts'])), 0, -1) . ')';
 	
 	// now prepare the SQL based on the %d + $_POST data
-	$posts = $wpdb->get_results( $wpdb->prepare("SELECT * FROM {$wpdb->posts} $where", $my_options['acf_posts']));
+	$actors = $wpdb->get_results( $wpdb->prepare("SELECT * FROM {$wpdb->posts} $where", $my_options['acf_posts']));
 
 	// Begin Loop
-	foreach ( $posts as $post ) {
+	foreach ( $actors as $post ) {
 		setup_postdata( $post );
 ?>
 	<item>

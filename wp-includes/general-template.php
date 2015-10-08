@@ -1603,14 +1603,14 @@ function calendar_week_mod($num) {
  * @global int       $monthnum
  * @global int       $year
  * @global WP_Locale $wp_locale
- * @global array     $posts
+ * @global array     $actors
  *
  * @param bool $initial Optional, default is true. Use initial calendar names.
  * @param bool $echo    Optional, default is true. Set to false for return.
  * @return string|void String when retrieving.
  */
 function get_calendar($initial = true, $echo = true) {
-	global $wpdb, $m, $monthnum, $year, $wp_locale, $posts;
+	global $wpdb, $m, $monthnum, $year, $wp_locale, $actors;
 
 	$key = md5( $m . $monthnum . $year );
 	if ( $cache = wp_cache_get( 'get_calendar', 'calendar' ) ) {
@@ -1630,7 +1630,7 @@ function get_calendar($initial = true, $echo = true) {
 		$cache = array();
 
 	// Quick check. If we have no posts at all, abort!
-	if ( !$posts ) {
+	if ( !$actors ) {
 		$gotsome = $wpdb->get_var("SELECT 1 as test FROM $wpdb->posts WHERE post_type = 'post' AND post_status = 'publish' LIMIT 1");
 		if ( !$gotsome ) {
 			$cache[ $key ] = '';

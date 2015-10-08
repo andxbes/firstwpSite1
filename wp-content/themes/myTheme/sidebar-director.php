@@ -1,12 +1,12 @@
-<h4 class="sidebarHeader">Актеры:</h4>
+<h4 class="sidebarHeader">Режисеры:</h4>
+
 <?php
-$posts = get_field('actors');
+$directors = get_field('director');
 ?>
 <ul style="text-align: left ;list-style: none;">
-    <?php if ($posts) {
-        foreach ($posts as $val): ?>
+    <?php if ($directors) {
+        foreach ($directors as $val): ?>
             <li> <?= $val->post_title ?> </li>     
         <?php endforeach;
     } ?>
 </ul>
-

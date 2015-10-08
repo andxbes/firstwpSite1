@@ -496,7 +496,7 @@ class WP {
 	 *
 	 * @global WP_Query     $wp_query
 	 * @global string       $query_string Query string for the loop.
-	 * @global array        $posts The found posts.
+	 * @global array        $actors The found posts.
 	 * @global WP_Post|null $post The current post, if available.
 	 * @global string       $request The SQL statement for the request.
 	 * @global int          $more Only set, if single page or post.

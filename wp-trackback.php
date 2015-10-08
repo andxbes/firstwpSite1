@@ -79,7 +79,7 @@ $excerpt   = wp_slash($excerpt);
 $blog_name = wp_slash($blog_name);
 
 if ( is_single() || is_page() )
-	$tb_id = $posts[0]->ID;
+	$tb_id = $actors[0]->ID;
 
 if ( !isset($tb_id) || !intval( $tb_id ) )
 	trackback_response(1, 'I really need an ID for this to work.');
