@@ -16,12 +16,12 @@ and open the template in the editor.
     body{
         font-size: 22px;
     }
-    
+/*    
     header{
         height: 960px;
         font-size: 30px;
         line-height: 70px;
-    }
+    }*/
 
     .work .cell {
         display: table-header-group;
@@ -110,12 +110,12 @@ and open the template in the editor.
     }
     
     
-    header{
+/*    header{
         height: 540px;
         font-size: 30px;
         line-height: 27px;
 
-    }
+    }*/
     
     .work{
         padding: 0px;

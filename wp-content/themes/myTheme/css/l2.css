@@ -88,7 +88,7 @@ header ul.menuList_plusSub > li > a:hover {
     display: none;
     position: absolute;
     width: 120px;
-    top: 30px;
+    top: 25px;
     left: 0;
     background-color: white;
      z-index: 5;
@@ -459,4 +459,12 @@ footer .menuList li{
 .sidebar {
     text-align: left;
    
+}
+.raiting >div {
+   position: relative;
+   width: 50%;
+   float: left;
+   padding: 0;
+   margin: 0;
+    
 }

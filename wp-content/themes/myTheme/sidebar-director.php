@@ -1,4 +1,4 @@
-<h4 class="sidebarHeader">Режисеры:</h4>
+<h4 class="sidebarHeader">Режисcеры:</h4>
 
 <?php
 $directors = get_field('director');
